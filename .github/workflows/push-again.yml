@@ -15,7 +15,7 @@ jobs:
   build-and-push:
     name: Build and push images
     if: ${{ github.ref == 'refs/heads/main' }}
-    runs-on: devcontainer-image-builder-ubuntu
+    runs-on: ubuntu-latest
     steps:
     - name: Free more space
       id: free_space 
