@@ -2,21 +2,19 @@
 
 **Image version:** dev
 
-**Source release/branch:** [main](https://github.com/devcontainers/images/tree/main/src/base-ubuntu)
+**Source release/branch:** [](https://github.com/devcontainers/images/tree//src/base-ubuntu)
 
 **Image variations:**
 - [jammy](#variant-jammy)
 
 ## Variant: jammy
 
-**Digest:** N/A
+**Digest:** sha256:fd21f07725565db374cb826d66a376c8410ad729f823e5d3c6e95a272b9a5961
 
 **Tags:**
 ```
 null/null:dev-jammy
 null/null:dev-ubuntu-22.04
-null/null:dev-ubuntu22.04
-null/null:dev-ubuntu
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
 
@@ -63,7 +61,7 @@ null/null:dev-ubuntu
 | strace | 5.16-0ubuntu3 |
 | sudo | 1.9.9-1ubuntu2.1 |
 | unzip | 6.0-26ubuntu3.1 |
-| vim-tiny | 2:8.2.3995-1ubuntu2.1 |
+| vim-tiny | 2:8.2.3995-1ubuntu2.3 |
 | wget | 1.21.2-2ubuntu1 |
 | zip | 3.0-12build2 |
 | zlib1g | 1:1.2.11.dfsg-2ubuntu9.2 |
