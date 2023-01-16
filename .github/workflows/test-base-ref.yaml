@@ -15,7 +15,7 @@ jobs:
         page-total: [1]
       fail-fast: false
     runs-on: ubuntu-latest
-    
+    steps:
     - name: Checkout
       id: checkout
       uses: actions/checkout@v1
@@ -30,7 +30,7 @@ jobs:
         echo github event base ref
         echo ${{github.event.base_ref}}
 
-image-info:
+  image-info:
     name: Trigger info extraction
     needs: [build-and-push]
     uses: devcontainers/images/.github/workflows/version-history.yml@main
