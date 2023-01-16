@@ -9,7 +9,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:640ea6936bc207d73fa84e8f81313802c935a0f0b8c852529d8488e84a179072
+**Digest:** sha256:03b68bb34419ca44e52732c53768486509dd4d6aee64297490df7c7cc3add594
 
 **Tags:**
 ```
