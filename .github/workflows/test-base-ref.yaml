@@ -28,7 +28,7 @@ jobs:
       id: print_base_ref
       run: |
         echo github event base ref
-        echo ${{github.event.base_ref}}
+        echo ${{github.base_ref}}
 
   image-info:
     name: Trigger info extraction
