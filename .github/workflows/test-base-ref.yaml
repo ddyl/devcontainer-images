@@ -6,7 +6,7 @@ on:
     - 'v*'
 
 jobs:
-  build-and-push:
+  print-ref:
     name: Print reference
     strategy:
       matrix:
@@ -28,15 +28,5 @@ jobs:
       id: print_base_ref
       run: |
         echo github event base ref
-        echo ${{github.base_ref}}
+        echo ${{github.event.base_ref}}
 
-  image-info:
-    name: Trigger info extraction
-    needs: [build-and-push]
-    uses: devcontainers/images/.github/workflows/version-history.yml@main
-    with:
-      release: "${{ github.ref }}"
-      cg: "false"
-      push: "true"
-      overwrite: "false"
-    secrets: inherit
