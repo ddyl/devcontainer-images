@@ -1,0 +1,42 @@
+name: Build and push images
+
+on: 
+  push:
+    tags:
+    - 'v*'
+
+jobs:
+  build-and-push:
+    name: Build and push images
+    strategy:
+      matrix:
+        page: [1]
+        # , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
+        page-total: [1]
+      fail-fast: false
+    runs-on: ubuntu-latest
+    
+    - name: Checkout
+      id: checkout
+      uses: actions/checkout@v1
+
+    - name: Get tag name
+      id: get_tag_name  
+      run: echo "::set-output name=tag::$(echo "${{ github.ref }}" | grep -oP 'refs/tags/\K(.+)')"
+
+    - name: Print base ref
+      id: print_base_ref
+      run: |
+        echo github event base ref
+        echo ${{github.event.base_ref}}
+
+image-info:
+    name: Trigger info extraction
+    needs: [build-and-push]
+    uses: devcontainers/images/.github/workflows/version-history.yml@main
+    with:
+      release: "${{ github.ref }}"
+      cg: "false"
+      push: "true"
+      overwrite: "false"
+    secrets: inherit
