@@ -9,7 +9,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:03b68bb34419ca44e52732c53768486509dd4d6aee64297490df7c7cc3add594
+**Digest:** sha256:1c2e2d29806f6c8c79d9a6a8543cdbd9f5f25f41029d6e3285adbe638aaa91d0
 
 **Tags:**
 ```
@@ -34,7 +34,7 @@ null/null:dev-ubuntu-22.04
 | ca-certificates | 20211016ubuntu0.22.04.1 |
 | curl | 7.81.0-1ubuntu1.7 |
 | dialog | 1.3-20211214-1 |
-| git | 1:2.34.1-1ubuntu1.5 |
+| git | 1:2.34.1-1ubuntu1.6 |
 | gnupg2 | 2.2.27-3ubuntu2.1 |
 | htop | 3.0.5-7build2 |
 | iproute2 | 5.15.0-1ubuntu2 |
@@ -59,7 +59,7 @@ null/null:dev-ubuntu-22.04
 | psmisc | 23.4-2build3 |
 | rsync | 3.2.3-8ubuntu3.1 |
 | strace | 5.16-0ubuntu3 |
-| sudo | 1.9.9-1ubuntu2.1 |
+| sudo | 1.9.9-1ubuntu2.2 |
 | unzip | 6.0-26ubuntu3.1 |
 | vim-tiny | 2:8.2.3995-1ubuntu2.3 |
 | wget | 1.21.2-2ubuntu1 |
