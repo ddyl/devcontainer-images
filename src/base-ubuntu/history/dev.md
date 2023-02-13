@@ -9,7 +9,7 @@
 
 ## Variant: jammy
 
-**Digest:** sha256:1c2e2d29806f6c8c79d9a6a8543cdbd9f5f25f41029d6e3285adbe638aaa91d0
+**Digest:** sha256:e193be0358afa256d9c2b57e65e9af95e8d657f0ba12f3a04f60f0e2a4a6752a
 
 **Tags:**
 ```
@@ -39,11 +39,11 @@ null/null:dev-ubuntu-22.04
 | htop | 3.0.5-7build2 |
 | iproute2 | 5.15.0-1ubuntu2 |
 | jq | 1.6-2.1ubuntu3 |
-| less | 590-1build1 |
+| less | 590-1ubuntu0.22.04.1 |
 | libc6 | 2.35-0ubuntu3.1 |
-| libgssapi-krb5-2 | 1.19.2-2 |
+| libgssapi-krb5-2 | 1.19.2-2ubuntu0.1 |
 | libicu70 | 70.1-2 |
-| libkrb5-3 | 1.19.2-2 |
+| libkrb5-3 | 1.19.2-2ubuntu0.1 |
 | libstdc++6 | 12.1.0-2ubuntu1~22.04 |
 | locales | 2.35-0ubuntu3.1 |
 | lsb-release | 11.1.0ubuntu4 |
